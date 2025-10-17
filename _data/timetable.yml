@@ -1,0 +1,23 @@
+# _data/timetable.yml
+
+weektype:
+  single:  # 单周课表
+    monday:
+      morning:
+        - { name: 数学, location: 教学楼201 }
+        - { name: 英语, location: 教学楼304 }
+      afternoon:
+        - { name: 物理, location: 实验楼204 }
+    tuesday:
+      morning:
+        - { name: 英语, location: 教学楼304 }
+        - { name: 计算机基础, location: 机房B103 }
+      afternoon:
+        - { name: 体育, location: 操场 }
+  double:  # 双周课表
+    monday:
+      morning:
+        - { name: 数学, location: 教学楼201 }
+        - { name: 语文, location: 教学楼101 }
+      afternoon:
+        - { name: 化学, location: 实验楼202 }

@@ -1,0 +1,9 @@
+- date: 2025-10-20
+  event: "计算机基础作业截止"
+  type: homework
+- date: 2025-10-22
+  event: "英语听写测试"
+  type: test
+- date: 2025-10-25
+  event: "团日活动"
+  type: activity
