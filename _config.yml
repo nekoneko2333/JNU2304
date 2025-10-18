@@ -189,7 +189,11 @@ baseurl: "/JNU2304" # 网站子路径，例如 /blog
 
 include:
   - assets/docs
-
+  - assets/docs/post
+  - assets/docs/post/20251010
+  - assets/docs/post/20251017
+  - assets/docs/post/20251017/exp2.pdf
+  - assets/docs/post/20251017/edge.jpeg
 
 
 # ==============================
