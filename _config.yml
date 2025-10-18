@@ -111,7 +111,7 @@ theme_mode: # [light | dark]
 # 都会自动添加此 CDN 前缀。
 #
 # 例如：'https://cdn.example.com'
-img_cdn: https://cdn.jsdelivr.net/gh/nekoneko2333/JNU2304
+img_cdn: https://cdn.jsdelivr.net/gh/nekoneko2333/JNU2304@main
 
 # 侧边栏头像（支持本地路径或跨域资源）
 avatar: /assets/img/staff/mcf.jpg
@@ -186,14 +186,6 @@ paginate: 10 # 每页文章数
 
 # 网站基础路径
 baseurl: "/JNU2304" # 网站子路径，例如 /blog
-
-include:
-  - assets/docs
-  - assets/docs/post
-  - assets/docs/post/20251010
-  - assets/docs/post/20251017
-  - assets/docs/post/20251017/exp2.pdf
-  - assets/docs/post/20251017/edge.jpeg
 
 
 # ==============================
