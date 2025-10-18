@@ -2,7 +2,7 @@
 title: 💡 生活&学习建议
 layout: page
 icon: lightbulb
-order: 3
+order: 4
 toc: true
 ---
 
@@ -76,6 +76,7 @@ toc: true
 6. 学院的教务办公室：信思楼B115-2，陈老师电话：0510-85197965（补考、重修、选课等于上课的事情要找教务老师）。
 
 # 校园卡使用指南 {#campus-card}
+[超详细的使用指南](https://mp.weixin.qq.com/s/X0w--hWbCiJTQ_qA8ZPsjw)
 ![](/assets/img/about_life/校园卡1.png)
 ![](/assets/img/about_life/校园卡2.png)
 ![](/assets/img/about_life/校园卡3.png)
@@ -144,6 +145,7 @@ toc: true
 ![](/assets/img/about_scores/补修2.png)
 
 # 寒假志愿活动 {#volunteer}
+[大一寒假社会实践附件](https://wwod.lanzout.com/ioI9Q1jqlhqb)
 ![](/assets/img/about_scores/寒假志愿活动.png)
 
 # 刷绩点（已失效） {#extra-gpa}

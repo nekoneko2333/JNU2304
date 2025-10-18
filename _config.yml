@@ -1,166 +1,201 @@
-# The Site Configuration
+# ==============================
+# 🏠 网站全局配置
+# ==============================
 
-# Import the theme
+# 导入主题
 theme: jekyll-theme-chirpy
 
-# The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
-# If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
-# otherwise, the layout language will use the default value of 'en'.
+# 网页语言代码 › http://www.lingoes.net/en/translator/langcode.htm
+# 如果该值与 `_data/locales` 文件夹中某个文件名相同，则网页布局语言会随之改变；
+# 否则将默认使用英文(en)。
 lang: zh-CN
 
-# Change to your timezone › https://kevinnovak.github.io/Time-Zone-Picker
-timezone:
+# 设置时区 › https://kevinnovak.github.io/Time-Zone-Picker
+timezone: Asia/Shanghai
 
-# jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
-# ↓ --------------------------
 
-title: "JNU-人智2304-班级空间" # the main title
+# ==============================
+# 🔍 jekyll-seo-tag 搜索引擎优化配置 › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
+# ==============================
 
-tagline: "班级公告 · 任务发布 · 活动通知" # it will display as the subtitle
+title: "JNU-人智2304-班级空间" # 网站主标题
+
+tagline: "班级公告 · 任务发布 · 活动通知" # 网站副标题，将显示在标题下方
 
 description: >
     这是JNU人智2304班级的协作与通知网站。
     用于发布通知、任务、活动与成果展示。
 
-# Fill in the protocol & hostname for your site.
-# E.g. 'https://username.github.io', note that it does not end with a '/'.
+# 填写网站的协议和主机名。
+# 例如：'https://username.github.io'（注意：不要以 '/' 结尾）
 url: "https://nekoneko2333.github.io"
 
+# GitHub 用户名
 github:
-  username: nekoneko2333 # change to your GitHub username
+  username: nekoneko2333 # 修改为你的 GitHub 用户名
 
+# Twitter 用户名
 twitter:
-  username: twitter_username # change to your Twitter username
+  username: twitter_username # 修改为你的 Twitter 用户名
 
 social:
-  # Change to your full name.
-  # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: your_full_name
-  email: example@domain.com # change to your email address
+  # 修改为你的真实姓名。
+  # 它会显示为文章默认作者和页脚版权拥有者。
+  name: Chengfang Ma
+  email: 3354974583@qq.com
   links:
-    # The first element serves as the copyright owner's link
-    - https://twitter.com/username # change to your Twitter homepage
-    - https://github.com/username # change to your GitHub homepage
-    # Uncomment below to add more social links
+    # 第一个链接会作为版权拥有者的链接
+    - https://github.com/nekoneko2333 # 修改为你的 GitHub 主页
+    - https://twitter.com/username # 修改为你的 Twitter 主页
+    # 可取消注释以下行以添加更多社交链接
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
 
-# Site Verification Settings
+# 网站验证代码配置（用于搜索引擎站长平台验证）
 webmaster_verifications:
-  google: # fill in your Google verification code
-  bing: # fill in your Bing verification code
-  alexa: # fill in your Alexa verification code
-  yandex: # fill in your Yandex verification code
-  baidu: # fill in your Baidu verification code
-  facebook: # fill in your Facebook verification code
+  google: # 填写 Google 验证代码
+  bing: # 填写 Bing 验证代码
+  alexa: # 填写 Alexa 验证代码
+  yandex: # 填写 Yandex 验证代码
+  baidu: # 填写百度验证代码
+  facebook: # 填写 Facebook 验证代码
 
 # ↑ --------------------------
-# The end of `jekyll-seo-tag` settings
+# jekyll-seo-tag 配置结束
+# ==============================
 
-# Web Analytics Settings
+
+# ==============================
+# 📊 网站访问统计配置
+# ==============================
+
 analytics:
   google:
-    id: # fill in your Google Analytics ID
+    id: # 填写你的 Google Analytics ID
   goatcounter:
-    id: # fill in your GoatCounter ID
+    id: # 填写你的 GoatCounter ID
   umami:
-    id: # fill in your Umami ID
-    domain: # fill in your Umami domain
+    id: # 填写你的 Umami ID
+    domain: # 填写你的 Umami 域名
   matomo:
-    id: # fill in your Matomo ID
-    domain: # fill in your Matomo domain
+    id: # 填写你的 Matomo ID
+    domain: # 填写你的 Matomo 域名
   cloudflare:
-    id: # fill in your Cloudflare Web Analytics token
+    id: # 填写你的 Cloudflare Web Analytics token
   fathom:
-    id: # fill in your Fathom Site ID
+    id: # 填写你的 Fathom Site ID
 
-# Page views settings
+# 页面浏览量统计设置
 pageviews:
-  provider: # now only supports 'goatcounter'
+  provider: goatcounter # 目前仅支持 'goatcounter'
 
-# Prefer color scheme setting.
+
+# ==============================
+# 🎨 外观设置
+# ==============================
+
+# 主题配色偏好
 #
-# Note: Keep empty will follow the system prefer color by default,
-# and there will be a toggle to switch the theme between dark and light
-# on the bottom left of the sidebar.
+# 注意：保持为空则默认跟随系统主题，
+# 页面左下角会出现切换明/暗模式的按钮。
 #
-# Available options:
+# 可用选项：
 #
-#     light — Use the light color scheme
-#     dark — Use the dark color scheme
+#     light — 使用浅色主题
+#     dark — 使用深色主题
 #
 theme_mode: # [light | dark]
 
-# The CDN endpoint for media resources.
-# Notice that once it is assigned, the CDN url
-# will be added to all media resources (site avatar, posts' images, audio and video files) paths starting with '/'
+# 静态资源的 CDN 地址。
+# 一旦设置，所有以 '/' 开头的资源路径（头像、图片、音视频等）
+# 都会自动添加此 CDN 前缀。
 #
-# e.g. 'https://cdn.com'
-cdn:
+# 例如：'https://cdn.example.com'
+cdn: https://cdn.jsdelivr.net/gh/nekoneko2333/JNU2304
 
-# the avatar on sidebar, support local or CORS resources
-# _config.yml
+# 侧边栏头像（支持本地路径或跨域资源）
 avatar: /assets/img/staff/mcf.jpg
 
+# 网站全局社交分享预览图（用于 SEO 的 og:image 标签）
+# 可在页面 Front Matter 中用 `page.image` 覆盖
+social_preview_image: /assets/img/logo/2304.jpg # 图片路径，可为本地或外链
 
-# The URL of the site-wide social preview image used in SEO `og:image` meta tag.
-# It can be overridden by a customized `page.image` in front matter.
-social_preview_image: # string, local or CORS resources
 
-# boolean type, the global switch for TOC in posts.
+# ==============================
+# 📚 文章与评论
+# ==============================
+
+# 是否全局启用文章目录（TOC）
 toc: true
 
 comments:
-  # Global switch for the post-comment system. Keeping it empty means disabled.
+  # 全局评论系统开关。留空则不启用。
   provider: # [disqus | utterances | giscus]
-  # The provider options are as follows:
+  # 各评论系统配置如下：
   disqus:
-    shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
-  # utterances settings › https://utteranc.es/
+    shortname: # 填写你的 Disqus shortname › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+  # utterances 评论系统配置 › https://utteranc.es/
   utterances:
-    repo: # <gh-username>/<repo>
-    issue_term: # < url | pathname | title | ...>
-  # Giscus options › https://giscus.app
+    repo: # 格式：<gh-username>/<repo>
+    issue_term: # 评论定位方式 < url | pathname | title | ...>
+  # Giscus 评论系统配置 › https://giscus.app
   giscus:
-    repo: # <gh-username>/<repo>
+    repo: # 格式：<gh-username>/<repo>
     repo_id:
     category:
     category_id:
-    mapping: # optional, default to 'pathname'
-    strict: # optional, default to '0'
-    input_position: # optional, default to 'bottom'
-    lang: # optional, default to the value of `site.lang`
-    reactions_enabled: # optional, default to the value of `1`
+    mapping: # 可选，默认值为 'pathname'
+    strict: # 可选，默认值为 '0'
+    input_position: # 可选，默认值为 'bottom'
+    lang: # 可选，默认使用 site.lang 的值
+    reactions_enabled: # 可选，默认值为 '1'
 
-# Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assets
+
+# ==============================
+# 🗂️ 静态资源管理
+# ==============================
+
+# 自托管静态资源（可选）› https://github.com/cotes2020/chirpy-static-assets
 assets:
   self_host:
-    enabled: # boolean, keep empty means false
-    # specify the Jekyll environment, empty means both
-    # only works if `assets.self_host.enabled` is 'true'
+    enabled: # 布尔值，留空即为 false
+    # 指定生效的 Jekyll 环境（留空则在两种环境中均生效）
+    # 仅当 enabled 为 true 时有效
     env: # [development | production]
 
+
+# ==============================
+# 📱 PWA（渐进式网页应用）配置
+# ==============================
+
 pwa:
-  enabled: true # The option for PWA feature (installable)
+  enabled: true # 启用 PWA 功能（可安装）
   cache:
-    enabled: true # The option for PWA offline cache
-    # Paths defined here will be excluded from the PWA cache.
-    # Usually its value is the `baseurl` of another website that
-    # shares the same domain name as the current website.
+    enabled: true # 启用 PWA 离线缓存
+    # 下方路径将被排除在 PWA 缓存之外
+    # 通常用于排除与本网站共域的其他站点资源
     deny_paths:
-      # - "/example"  # URLs match `<SITE_URL>/example/*` will not be cached by the PWA
+      # - "/example"  # 匹配 `<SITE_URL>/example/*` 的 URL 将不被缓存
 
-paginate: 10
 
-# The base URL of your site
-baseurl: "/JNU2304" # the subpath of your site, e.g. /blog
+# ==============================
+# 📄 页面与路径设置
+# ==============================
 
-# ------------ The following options are not recommended to be modified ------------------
+paginate: 10 # 每页文章数
+
+# 网站基础路径
+baseurl: "/JNU2304" # 网站子路径，例如 /blog
+
+
+# ==============================
+# ⚙️ 以下内容一般不建议修改
+# ==============================
 
 kramdown:
   footnote_backlink: "&#8617;&#xfe0e;"
   syntax_highlighter: rouge
-  syntax_highlighter_opts: # Rouge Options › https://github.com/jneen/rouge#full-options
+  syntax_highlighter_opts: # Rouge 代码高亮配置 › https://github.com/jneen/rouge#full-options
     css_class: highlight
     # default_lang: console
     span:
@@ -176,14 +211,14 @@ collections:
 
 defaults:
   - scope:
-      path: "" # An empty string here means all files in the project
+      path: "" # 空字符串表示作用于整个项目中的所有文件
       type: posts
     values:
       layout: post
-      comments: true # Enable comments in posts.
-      toc: true # Display TOC column in posts.
-      # DO NOT modify the following parameter unless you are confident enough
-      # to update the code of all other post links in this project.
+      comments: true # 在文章中启用评论
+      toc: true # 显示文章目录
+      # ⚠️ 除非非常清楚，否则不要修改以下参数，
+      # 否则会导致文章链接错误。
       permalink: /posts/:title/
   - scope:
       path: _drafts
@@ -191,13 +226,13 @@ defaults:
       comments: false
   - scope:
       path: ""
-      type: tabs # see `site.collections`
+      type: tabs # 参考 `site.collections`
     values:
       layout: page
       permalink: /:title/
 
 sass:
-  style: compressed
+  style: compressed # CSS 压缩样式
 
 compress_html:
   clippings: all

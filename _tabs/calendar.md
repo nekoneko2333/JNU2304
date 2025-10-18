@@ -1,7 +1,7 @@
 ---
 title: 📅 日历与作业
-layout: page
 permalink: /calendar/
+order: 3
 ---
 
 <style>
