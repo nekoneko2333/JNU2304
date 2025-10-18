@@ -2,7 +2,6 @@
 layout: page
 title: 👥 班委与老师
 order: 4
-permalink: /staff/
 ---
 
 <style>

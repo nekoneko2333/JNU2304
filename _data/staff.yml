@@ -2,298 +2,300 @@
 - type: teacher
   role: 班主任
   name: 李慧
-  phone: 15206197235
+  phone: "15206197235"
   office: 人工智能学B325-1
-  email:
+  email: ""
 
 - type: teacher
   role: 辅导员
   name: 麦日帕提·马热木
-  phone: 13372536748
+  phone: "13372536748"
   office: 学院楼111-1
-  email:
+  email: ""
 
 - type: teacher
   role: 教务处
   name: 陈老师
-  phone: 0510-85197965
+  phone: "0510-85197965"
   office: 行政楼
-  email:
+  email: ""
 
 - type: teacher
   role: 人工智能导论
   name: 陈璟
-  phone:
+  phone: ""
   office: 行政楼5楼军理科办公室
-  email:
+  email: ""
 
 - type: teacher
   role: 军事理论
   name: 汪朗
-  phone:
+  phone: ""
   office: 行政楼5楼军理科办公室
-  email:
+  email: ""
 
 - type: teacher
   role: 数学分析
   name: 徐丽雯
-  phone:
+  phone: ""
   office: 理学院319
-  email:
+  email: ""
 
 - type: teacher
   role: 高等代数
   name: 施圣
-  phone:
+  phone: ""
   office: 理学院319
-  email:
+  email: ""
 
 - type: teacher
   role: 高等代数
   name: 沈昱雯
-  phone:
+  phone: ""
   office: 理学院319
-  email:
+  email: ""
   wechat: dahuyoushen
 
 - type: teacher
   role: 大学物理
   name: 胡满峰
-  phone: 13812529210
-  office:
-  email:
+  phone: "13812529210"
+  office: ""
+  email: ""
 
 - type: teacher
   role: 大学物理
   name: 孙瑷蕙
-  phone:
+  phone: ""
   office: 钱伟长楼204
-  email:
+  email: ""
 
 - type: teacher
   role: 形势与政治
   name: 张乐
-  phone: 18626061376
-  office:
-  email:
+  phone: "18626061376"
+  office: ""
+  email: ""
 
 - type: teacher
   role: 形势与政治
   name: 白冰
-  phone: 13706194209
-  office:
-  email: 67860577@qq.com
+  phone: "13706194209"
+  office: ""
+  email: "67860577@qq.com"
 
 - type: teacher
   role: 离散数学
   name: 李元波
-  phone:
+  phone: ""
   office: 先进技术研究院A408
-  email:
+  email: ""
   wechat: a961322685
 
 - type: teacher
   role: 离散数学
   name: 胡聪
-  phone: 13921187296
-  office:
+  phone: "13921187296"
+  office: ""
   email: discretemath_jnu@163.com
 
 - type: teacher
   role: 计算机图形学
   name: 王映辉
-  phone:
-  office:
+  phone: ""
+  office: ""
   email: wangyh@jiangnan.edu.cn
 
 - type: teacher
   role: 计算机图形学实验辅导
   name: 廖克勤
-  phone:
-  office:
-  email:
+  phone: ""
+  office: ""
+  email: ""
 
 - type: teacher
   role: 计算机图形学实验辅导
   name: 李天同
-  phone:
-  office:
-  email:
+  phone: ""
+  office: ""
+  email: ""
 
 - type: teacher
   role: 概率论与数理统计
   name: 金顺
-  phone: 1522945366
+  phone: "1522945366"
   office: 理学院楼323隔壁玻璃房
-  email:
+  email: ""
 
 - type: teacher
   role: 计算机组成原理
   name: 代成龙
-  phone:
-  office:
+  phone: ""
+  office: ""
   email: chenglongdai@jiangnan.edu.cn
 
 - type: teacher
   role: 软件工程
   name: 张涛
-  phone: 13405761069
-  office:
+  phone: "13405761069"
+  office: ""
   email: taozhang@jiangnan.edu.cn
 
 - type: teacher
   role: 软件工程
   name: 陈爱国
-  phone:
-  office:
-  email:
+  phone: ""
+  office: ""
+  email: ""
 
 - type: teacher
   role: Python 上机
   name: 朱学峰
-  phone:
-  office:
-  email:
+  phone: ""
+  office: ""
+  email: ""
 
 - type: teacher
   role: Python 上机
   name: 徐天阳
-  phone:
-  office:
-  email:
+  phone: ""
+  office: ""
+  email: ""
 
 - type: teacher
   role: 最优化理论与方法
   name: 孙晓燕
-  phone:
-  office:
+  phone: ""
+  office: ""
   email: xysun78@126.com
 
 - type: teacher
   role: 计算机视觉
   name: 朱学峰
-  phone:
-  office:
+  phone: ""
+  office: ""
   email: xuefeng.zhu@jiangnan.edu.cn
+
 
 # 班委（学生）
 - role: 班长
   type: student
   name: 余恩泽
-  avatar: /assets/img/staff/yez.jpg
+  avatar: "/assets/img/staff/yez.jpg"
   qq: 2467695008
   wechat: call_me_migo
-  phone: 19519955175
+  phone: "19519955175"
 
 - role: 学委
   type: student
   name: 马承芳
-  avatar: /assets/img/staff/mcf.jpg
+  avatar: "/assets/img/staff/mcf.jpg"
   qq: 3354974583
   wechat: mcf_20051225
-  phone: 15926524146
+  phone: "15926524146"
 
 - role: 团支书
   type: student
   name: 赵燕玲
-  avatar: /assets/img/staff/zyl.jpg
+  avatar: "/assets/img/staff/zyl.jpg"
   qq: 1692964899
   wechat: wxid_wbwcwssc8v9q22
-  phone: 19826389870
+  phone: "19826389870"
 
 - role: 生活委员
   type: student
   name: 邢宇
-  avatar: /assets/img/staff/xy.jpg
+  avatar: "/assets/img/staff/xy.jpg"
   qq: 2452576986
   wechat: b2452576986
-  phone: 
+  phone: ""
 
 - role: 宣传委员
   type: student
   name: 魏征征
-  avatar: /assets/img/staff/wzz.jpg
+  avatar: "/assets/img/staff/wzz.jpg"
   qq: 2054712619
   wechat: WangZhuangZhuangHere
-  phone: 
+  phone: ""
 
 - role: 体育委员
   type: student
   name: 俞思瑶
-  avatar: /assets/img/staff/ysy.jpg
+  avatar: "/assets/img/staff/ysy.jpg"
   qq: 2896612878
   wechat: _18797785376
-  phone: 
+  phone: ""
 
 - role: 心理委员
   type: student
   name: 徐昕喆 
-  avatar: /assets/img/staff/xxz.jpg
+  avatar: "/assets/img/staff/xxz.jpg"
   qq: 1276982383
   wechat: wxid_7mikjlxt5hno22
-  phone: 15255603557
+  phone: "15255603557"
 
 - role: 组织委员
   type: student
   name: 郭馨怡
-  avatar: /assets/img/staff/gxy.jpg
+  avatar: "/assets/img/staff/gxy.jpg"
   qq: 809434786
   wechat: wxid_kal5ddq3f77p22
-  phone: 19826389876
+  phone: "19826389876"
+
 
 # 历届班委（学生）
 - role: 第一任班长
   type: student
   name: 王嵩羽
-  avatar: /assets/img/staff/wsy.jpg
+  avatar: "/assets/img/staff/wsy.jpg"
   qq: 1219976364
   wechat: wsy13214290713
-  phone: 13214290713
+  phone: "13214290713"
 
 - role: 第二任班长
   type: student
   name: 甘思源
-  avatar: /assets/img/staff/gsy.jpg
+  avatar: "/assets/img/staff/gsy.jpg"
   qq: 2558325735
   wechat: Taurus_0514sy
-  phone: 19519959550
+  phone: "19519959550"
 
 - role: 第一任生活委员
   type: student
   name: 孙以恒
-  avatar: /assets/img/staff/syh.jpg
+  avatar: "/assets/img/staff/syh.jpg"
   qq: 3041237795
   wechat: syh18014435321
-  phone: 18969090393
+  phone: "18969090393"
 
 - role: 第一任组织委员
   type: student
   name: 杭东泽
-  avatar: /assets/img/staff/hdz.jpg
+  avatar: "/assets/img/staff/hdz.jpg"
   qq: 1193142848
   wechat: h13115673090
-  phone: 13115673090
+  phone: "13115673090"
 
 - role: 第二任组织委员
   type: student
   name: 张佳怡
-  avatar: /assets/img/staff/zjy.jpg
-  qq: 2761017299
-  wechat: zjy18983965670
-  phone:
+  avatar: "/assets/img/staff/zjy.jpg"
+  qq: ""
+  wechat: ""
+  phone: ""
 
 - role: 第一任宣传委员
   type: student
   name: 郑晗湘
-  avatar: /assets/img/staff/zhx.jpg
+  avatar: "/assets/img/staff/zhx.jpg"
   qq: 2024126101
-  wechat: 185559013605
-  phone: 185559013605
+  wechat: "185559013605"
+  phone: "185559013605"
 
 - role: 第一任体育委员
   type: student
   name: 梁文博
-  avatar: /assets/img/staff/lwb.jpg
-  qq: 3447481314
-  wechat:
-  phone:
+  avatar: "/assets/img/staff/lwb.jpg"
+  qq: ""
+  wechat: ""
+  phone: ""

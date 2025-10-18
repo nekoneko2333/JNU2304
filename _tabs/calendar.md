@@ -1,6 +1,5 @@
 ---
 title: 📅 日历
-permalink: /calendar/
 order: 3
 ---
 
