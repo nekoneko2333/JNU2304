@@ -71,14 +71,14 @@
   email:
 
 - type: teacher
-  role: 形式与政治
+  role: 形势与政治
   name: 张乐
   phone: 18626061376
   office:
   email:
 
 - type: teacher
-  role: 形式与政治
+  role: 形势与政治
   name: 白冰
   phone: 13706194209
   office:
@@ -205,25 +205,25 @@
   type: student
   name: 邢宇
   avatar: /assets/img/staff/xy.jpg
-  qq: 2352576986
-  wechat: wxid_li5
-  phone: 19826389872
+  qq: 2452576986
+  wechat: b2452576986
+  phone: 
 
 - role: 宣传委员
   type: student
   name: 魏征征
   avatar: /assets/img/staff/wzz.jpg
-  qq: 1234567890
-  wechat: wxid_li6
-  phone: 19826389873
+  qq: 2054712619
+  wechat: WangZhuangZhuangHere
+  phone: 
 
 - role: 体育委员
   type: student
   name: 俞思瑶
   avatar: /assets/img/staff/ysy.jpg
-  qq: 9876543210
-  wechat: wxid_li7
-  phone: 19826389874
+  qq: 2896612878
+  wechat: _18797785376
+  phone: 
 
 - role: 心理委员
   type: student

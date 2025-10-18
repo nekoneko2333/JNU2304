@@ -1,14 +1,19 @@
 ---
-title: 📅 日历与作业
+title: 📅 日历
 permalink: /calendar/
 order: 3
 ---
 
 <style>
+/* 日历整体容器，限制宽度，避免撑开侧边栏 */
 .calendar-container {
-  max-width: 800px;
+  max-width: 900px; /* 最大宽度 */
   margin: auto;
+  overflow-x: auto; /* 内容过宽允许水平滚动 */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
+/* 表头和导航按钮 */
 .calendar-header {
   display: flex;
   justify-content: space-between;
@@ -16,36 +21,76 @@ order: 3
   margin-bottom: 1rem;
 }
 .calendar-header button {
-  padding: 0.3rem 0.6rem;
+  padding: 0.4rem 0.8rem;
   cursor: pointer;
+  border: 1px solid #ccc;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  transition: 0.2s;
 }
-.calendar {
+.calendar-header button:hover {
+  background-color: #e0e0e0;
+}
+
+/* 表格样式 */
+.calendar-container table.calendar {
   width: 100%;
   border-collapse: collapse;
+  table-layout: fixed; /* 固定列宽，避免撑开 */
   text-align: center;
 }
-.calendar th, .calendar td {
+.calendar-container table th,
+.calendar-container table td {
   border: 1px solid #ddd;
-  padding: 8px;
+  padding: 6px;
   vertical-align: top;
-  height: 80px;
+  height: 120px; /* 固定高度 */
+  overflow: hidden;
 }
-.calendar th {
-  background-color: #f5f5f5;
+.calendar-container table th {
+  background-color: #f0f0f0;
 }
+
+/* 今天高亮 */
 .today {
-  background-color: #ffeb3b;
+  background-color: #4fc3f7 !important;
+  color: #fff;
 }
+
+/* 多事件容器 */
+.events-container {
+  display: flex;
+  flex-direction: column;
+  max-height: 90px; /* 限制高度，多余事件隐藏 */
+  overflow: hidden;
+}
+
+/* 单个事件样式 */
 .event {
   display: block;
-  margin-top: 0.3rem;
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   border-radius: 4px;
   padding: 2px 4px;
+  margin-top: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .event.homework { background-color: #f28b82; color: #fff; }
 .event.test { background-color: #fbbc04; color: #fff; }
 .event.activity { background-color: #34a853; color: #fff; }
+
+/* 响应式优化 */
+@media (max-width: 768px) {
+  .calendar-container {
+    max-width: 100%;
+  }
+  .calendar-container table th,
+  .calendar-container table td {
+    font-size: 0.65rem;
+    height: 80px;
+  }
+}
 </style>
 
 <div class="calendar-container">
@@ -76,7 +121,7 @@ function renderCalendar() {
   const tbody = document.getElementById("calendarBody");
   tbody.innerHTML = "";
   let dayCounter = 1;
-  
+
   for (let week = 0; week < 6; week++) {
     const tr = document.createElement("tr");
     for (let d = 0; d < 7; d++) {
@@ -86,17 +131,26 @@ function renderCalendar() {
       } else {
         const dateStr = `${year}-${String(month).padStart(2,"0")}-${String(dayCounter).padStart(2,"0")}`;
         td.innerHTML = `<strong>${dayCounter}</strong>`;
+
         const events = calendarData.filter(e => e.date === dateStr);
-        events.forEach(ev => {
-          const span = document.createElement("span");
-          span.className = "event " + (ev.type || "");
-          span.textContent = ev.event;
-          td.appendChild(span);
-        });
+        if (events.length) {
+          const container = document.createElement("div");
+          container.className = "events-container";
+          events.forEach(ev => {
+            const span = document.createElement("span");
+            span.className = "event " + (ev.type || "");
+            span.title = ev.event; // 鼠标悬停显示完整内容
+            span.textContent = ev.event;
+            container.appendChild(span);
+          });
+          td.appendChild(container);
+        }
+
         const today = new Date();
         if (today.getFullYear() === year && today.getMonth()+1 === month && today.getDate() === dayCounter) {
           td.classList.add("today");
         }
+
         dayCounter++;
       }
       tr.appendChild(td);

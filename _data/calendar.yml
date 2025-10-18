@@ -1,9 +1,15 @@
-- date: 2025-10-20
-  event: "计算机基础作业截止"
+- date: 2025-10-28
+  event: "数字音视频分析实验2截止"
   type: homework
-- date: 2025-10-22
-  event: "英语听写测试"
-  type: test
-- date: 2025-10-25
-  event: "团日活动"
+
+- date: 2025-12-31
+  event: "算法实验1"
+  type: homework
+
+- date: 2025-10-17
+  event: "班会"
   type: activity
+
+- date: 2025-10-19
+  event: "互动媒体技术展厅布置"
+  type: homework
