@@ -18,6 +18,10 @@
   event: "先进班集体预答辩"
   type: "activity"
 
-- date: 2025-10-22
+- date: 2025-10-24
   event: "先进班集体正式答辩"
   type: "activity"
+
+- date: 2025-11-20
+  event: "大数据实验1"
+  type: "homework"
