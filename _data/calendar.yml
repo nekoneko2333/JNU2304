@@ -6,6 +6,10 @@
   event: "算法实验1"
   type: "homework"
 
+- date: 2026-01-01
+  event: "算法实验2"
+  type: "homework"
+
 - date: 2025-10-17
   event: "班会"
   type: "activity"
