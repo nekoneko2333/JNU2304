@@ -53,3 +53,27 @@
 - date: 2025-12-21
   event: "习思想大作业截止"
   type: "homework"
+
+- date: 2025-12-31
+  event: "互动媒体大作业截止"
+  type: "homework"
+
+- date: 2025-11-17
+  event: "机器学习实验1"
+  type: "homework"
+
+- date: 2025-11-19
+  event: "模式识别实验1"
+  type: "homework"
+
+- date: 2025-11-24
+  event: "机器学习实验2"
+  type: "homework"
+
+- date: 2025-11-26
+  event: "模式识别实验2"
+  type: "homework"
+
+- date: 2025-11-26
+  event: "数字音视频分析实验4"
+  type: "homework"
