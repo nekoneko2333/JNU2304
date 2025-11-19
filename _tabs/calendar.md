@@ -592,9 +592,25 @@ order: 3
   </div>
 </div>
 
-<!-- 把 calendar.yml 数据隐藏到页面里，供 JS 读取 -->
+<!-- 合并 calendar.yml 和博客提醒日期数据，供 JS 读取 -->
 <script id="calendarData" type="application/json">
-{{ site.data.calendar | jsonify }}
+{%- comment -%}
+合并两个数据源：
+1. _data/calendar.yml 中的手动添加的事件
+2. 从博客 front matter 中提取的提醒日期
+{%- endcomment -%}
+{%- assign manual_events = site.data.calendar -%}
+{%- assign post_events = site.data.calendar_from_posts -%}
+{%- if manual_events and post_events -%}
+  {%- assign all_events = manual_events | concat: post_events -%}
+  {{ all_events | jsonify }}
+{%- elsif manual_events -%}
+  {{ manual_events | jsonify }}
+{%- elsif post_events -%}
+  {{ post_events | jsonify }}
+{%- else -%}
+  []
+{%- endif -%}
 </script>
 
 <!-- 引入 JS -->

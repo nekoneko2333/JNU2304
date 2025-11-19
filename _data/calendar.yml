@@ -1,15 +1,3 @@
-- date: 2025-10-28
-  event: "数字音视频分析实验2截止"
-  type: "homework"
-
-- date: 2025-12-31
-  event: "算法实验1"
-  type: "homework"
-
-- date: 2026-01-01
-  event: "算法实验2"
-  type: "homework"
-
 - date: 2025-10-17
   event: "班会"
   type: "activity"
@@ -26,20 +14,8 @@
   event: "先进班集体正式答辩"
   type: "activity"
 
-- date: 2025-11-20
-  event: "大数据实验1"
-  type: "homework"
-
-- date: 2025-10-29
-  event: "互动媒体技术8周实验第一部分"
-  type: "homework"
-
 - date: 2025-11-01
   event: "互动媒体技术8周实验第二部分"
-  type: "homework"
-
-- date: 2025-11-12
-  event: "数字音视频分析实验3截止"
   type: "homework"
 
 - date: 2025-11-06
@@ -49,31 +25,3 @@
 - date: 2025-10-26
   event: "军璋古道徒步"
   type: "activity"
-
-- date: 2025-12-21
-  event: "习思想大作业截止"
-  type: "homework"
-
-- date: 2025-12-31
-  event: "互动媒体大作业截止"
-  type: "homework"
-
-- date: 2025-11-17
-  event: "机器学习实验1"
-  type: "homework"
-
-- date: 2025-11-19
-  event: "模式识别实验1"
-  type: "homework"
-
-- date: 2025-11-24
-  event: "机器学习实验2"
-  type: "homework"
-
-- date: 2025-11-26
-  event: "模式识别实验2"
-  type: "homework"
-
-- date: 2025-11-26
-  event: "数字音视频分析实验4"
-  type: "homework"
