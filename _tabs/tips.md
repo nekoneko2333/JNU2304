@@ -34,6 +34,41 @@ toc: true
 }
 </style>
 
+<style>
+/* Image Gallery Styles */
+.image-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.image-gallery img {
+  width: 100%;
+  max-width: 800px; /* Limit max width for better readability on large screens */
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 0 auto; /* Center images */
+  display: block;
+}
+
+.image-gallery img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+  }
+}
+</style>
+
 <!-- 手动生成目录 -->
 <div class="toc">
   <h2>目录</h2>
@@ -82,8 +117,17 @@ toc: true
 ![](/assets/img/about_life/校园卡3.png)
 
 # 医保报销方式 {#insurance}
-![](/assets/img/about_life/医保1.png)
-![](/assets/img/about_life/医保2.png)
+
+<div class="image-gallery">
+  <img src="/assets/img/about_life/medical_reimbursement_1.jpg" alt="医保报销流程1">
+  <img src="/assets/img/about_life/medical_reimbursement_2.jpg" alt="医保报销流程2">
+  <img src="/assets/img/about_life/medical_reimbursement_3.jpg" alt="医保报销流程3">
+  <img src="/assets/img/about_life/medical_reimbursement_4.jpg" alt="医保报销流程4">
+  <img src="/assets/img/about_life/medical_reimbursement_5.jpg" alt="医保报销流程5">
+  <!-- 保留原有图片供参考 -->
+  <img src="/assets/img/about_life/医保1.png" alt="医保报销参考1">
+  <img src="/assets/img/about_life/医保2.png" alt="医保报销参考2">
+</div>
 
 # 校历 {#calendar}
 ![](/assets/img/about_life/23校历.png)
