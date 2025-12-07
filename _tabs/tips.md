@@ -129,6 +129,20 @@ toc: true
   <img src="/assets/img/about_life/医保2.png" alt="医保报销参考2">
 </div>
 
+## 异地就医办理流程 (推荐)
+
+> 📸 **信息来源**：余恩泽 (2025.12)
+
+推荐大家办理一下异地就医备案，办理后**半年内**可以在家乡和无锡两地同时使用医保。
+
+- **办理方式**：网上办理即可
+- **审核时间**：约 2-3 个工作日
+
+<div class="image-gallery">
+  <img src="/assets/img/about_life/trans_regional_medical.jpg" alt="异地就医办理流程">
+</div>
+
+
 # 校历 {#calendar}
 ![](/assets/img/about_life/23校历.png)
 ![](/assets/img/about_life/24校历.png)
