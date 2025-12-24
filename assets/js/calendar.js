@@ -280,5 +280,80 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 
+  // ===== 视图切换功能 =====
+  const viewTabs = document.querySelectorAll('.view-tab');
+  const viewContents = document.querySelectorAll('.view-content');
+  
+  viewTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const viewId = tab.dataset.view;
+      
+      // 切换标签激活状态
+      viewTabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      
+      // 切换视图显示
+      viewContents.forEach(v => v.classList.remove('active'));
+      document.getElementById('view-' + viewId).classList.add('active');
+      
+      // 渲染对应视图
+      if (viewId === 'countdown') renderCountdown();
+    });
+  });
+  
+  // ===== 倒计时视图 =====
+  function renderCountdown() {
+    const container = document.getElementById('countdownList');
+    if (!container) return;
+    
+    const now = new Date();
+    now.setHours(0, 0, 0, 0);
+    
+    // 只显示未过期的，按剩余天数排序
+    const futureEvents = calendarData
+      .map(event => {
+        const eventDate = new Date(event.date);
+        eventDate.setHours(0, 0, 0, 0);
+        const daysLeft = Math.ceil((eventDate - now) / (1000 * 60 * 60 * 24));
+        return { ...event, eventDate, daysLeft };
+      })
+      .filter(e => e.daysLeft >= 0)
+      .sort((a, b) => a.daysLeft - b.daysLeft);
+    
+    if (futureEvents.length === 0) {
+      container.innerHTML = '<div class="countdown-empty" style="text-align:center;padding:2rem;color:#999;">🎉 暂无待办事项</div>';
+      return;
+    }
+    
+    container.innerHTML = futureEvents.map(event => {
+      const isUrgent = event.daysLeft <= 3;
+      const dateStr = `${event.eventDate.getMonth() + 1}月${event.eventDate.getDate()}日`;
+      
+      return `
+        <div class="countdown-item ${isUrgent ? 'urgent' : ''}" onclick="${event.link ? `window.location.href='${event.link}'` : ''}">
+          <div class="countdown-days">
+            <div class="countdown-days-number">${event.daysLeft}</div>
+            <div class="countdown-days-label">${event.daysLeft === 0 ? '今天' : '天'}</div>
+          </div>
+          <div class="countdown-info">
+            <div class="countdown-event-title">${event.event || event.title || '未命名'}</div>
+            <div class="countdown-event-date">截止：${dateStr}</div>
+          </div>
+          <span class="countdown-event-type ${event.type || 'homework'}">${getTypeName(event.type)}</span>
+        </div>
+      `;
+    }).join('');
+  }
+  
+  // 辅助函数：获取类型名称
+  function getTypeName(type) {
+    const types = {
+      homework: '作业',
+      test: '考试',
+      activity: '活动'
+    };
+    return types[type] || '作业';
+  }
+
   renderCalendar();
 });

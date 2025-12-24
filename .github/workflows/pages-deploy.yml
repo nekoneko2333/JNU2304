@@ -9,6 +9,10 @@ on:
       - README.md
       - LICENSE
 
+  # 每天北京时间早上6点自动重建（确保自动置顶更新）
+  schedule:
+    - cron: '0 22 * * *'  # UTC 22:00 = 北京时间 06:00
+
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
