@@ -24,8 +24,8 @@
     需要这些支持，跟着他的教程下也比较容易
     - Ruby version 2.7.0 or higher
     - RubyGems
-    - GCC and Make
-    下载好之后 在jnu2304文件夹下运行 **bundle exec jekyll serve** 这条指令，就会在本地端口实时预览网站了。
+    - GCC and Makebundle exec jekyll serve
+    下载好之后 在jnu2304文件夹下运行 **** 这条指令，就会在本地端口实时预览网站了。
     如果只是简单的写写博客，任务很简单，没什么语法错误，不本地运行直接上传也是可以滴
 
 ## 文件夹说明
